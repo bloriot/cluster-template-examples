@@ -3,7 +3,7 @@
 apiVersion: rke-machine-config.cattle.io/v1
 kind: Amazonec2Config
 metadata:
-  name: {{ $nodepool.name }}
+  name: {{ $.Values.cluster.name }}-{{ $nodepool.name }}
   namespace: fleet-default
 {{- if $nodepool.ami }}
 ami: {{ $nodepool.ami }}
@@ -117,7 +117,7 @@ zone: {{ $nodepool.zone }}
 apiVersion: rke-machine-config.cattle.io/v1
 kind: Amazonec2Config
 metadata:
-  name: {{ $nodepool.name }}
+  name: {{ $.Values.cluster.name }}-{{ $nodepool.name }}
   namespace: fleet-default
 {{- if $nodepool.ami }}
 ami: {{ $nodepool.ami }}
