@@ -87,7 +87,7 @@ nodepools:
   instanceType: t3a.medium
 
   # AWS region
-  region: us-west-2
+  region: eu-west-3
 
   # Whether to create `rancher-node` security group. If false, can provide with existing security group
   createSecurityGroup: true
@@ -95,7 +95,7 @@ nodepools:
   # securityGroups: []
 
   # AWS keypair to use
-  keypairName: ""
+  keypairName: "aws"
 
   # Skip adding default rules to security groups
   securityGroupReadonly: false
@@ -104,7 +104,7 @@ nodepools:
   sshKeyContents: ""
 
   # AWS VPC subnet id
-  subnetId: ""
+  subnetId: "subnet-bc6c75d5"
 
   # Set this flag to enable CloudWatch monitoring
   monitoring: false
@@ -125,7 +125,7 @@ nodepools:
   retries: 5
 
   # AWS root disk size (in GB)
-  rootSize: 16
+  rootSize: 50
 
   # AWS spot instance bid price (in dollar)
   spotPrice: 0.5
@@ -137,7 +137,7 @@ nodepools:
   volumeType: gp2
 
   # AWS VPC id
-  # vpcId: ""
+  vpcId: "vpc-7456a51c"
 
   # Create an EBS optimized instance
   useEbsOptimizedInstance: false
