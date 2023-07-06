@@ -164,7 +164,7 @@ nodepools:
   retries: 5
 
   # AWS root disk size (in GB)
-  rootSize: 50
+  rootSize: 50g
 
   # AWS spot instance bid price (in dollar)
   spotPrice: 0.5
