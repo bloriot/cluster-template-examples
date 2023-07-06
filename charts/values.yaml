@@ -54,7 +54,7 @@ nodepools:
   taints: {}
 
   # specify nodepool size
-  quantity: 1
+  quantity: 3
 
   # Pause node pool
   paused: false
@@ -99,7 +99,7 @@ nodepools:
   # machineDeploymentAnnotations: {}
 
   # specify nodepool name
-  # name: "master"
+  name: "ec2-master"
 
   # AWS machine image
   # ami: ""
