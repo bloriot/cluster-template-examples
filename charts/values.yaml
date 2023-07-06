@@ -99,7 +99,7 @@ nodepools:
   # machineDeploymentAnnotations: {}
 
   # specify nodepool name
-  name: "ec2-master"
+  name: "master"
 
   # AWS machine image
   # ami: ""
